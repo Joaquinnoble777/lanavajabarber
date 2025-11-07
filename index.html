@@ -6,45 +6,89 @@
   <title>Barbería La Navaja — Barbería clásica con toque moderno</title>
   <meta name="description" content="Barbería La Navaja: cortes, afeitados y grooming masculino en Montevideo. Reserva por WhatsApp: +598 99 123 456.">
   <meta name="author" content="Noble Code Web">
-  <!-- Open Graph / Social -->
+
+  <!-- Open Graph -->
   <meta property="og:title" content="Barbería La Navaja">
-  <meta property="og:description" content="Cortes, afeitados y grooming masculino en Montevideo. Reserva por WhatsApp.">
+  <meta property="og:description" content="Cortes, afeitados y grooming masculino en Montevideo. Reservá tu turno por WhatsApp.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_UY">
 
-  <!-- Bootstrap 5.3 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- 📍 LOCAL BUSINESS -->
+<meta name="geo.region" content="UY-MO">
+<meta name="geo.placename" content="Montevideo, Uruguay">
+<meta name="geo.position" content="-34.7065444;-56.2163191">
+<meta name="ICBM" content="-34.7065444, -56.2163191">
+
+<!-- 💬 OPEN GRAPH (Facebook, Instagram, WhatsApp) -->
+<meta property="og:type" content="business.business">
+<meta property="og:title" content="Barbería La Navaja — Estilo clásico y moderno en Montevideo">
+<meta property="og:description" content="Cortes, afeitados y grooming masculino con atención personalizada. Reservá tu turno por WhatsApp.">
+<meta property="og:url" content="https://www.barberialanavaja.uy/">
+<meta property="og:site_name" content="Barbería La Navaja">
+<meta property="og:locale" content="es_UY">
+<meta property="og:image" content="https://www.barberialanavaja.uy/img/barberia-lanavaja-cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- 🐦 TWITTER CARD -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Barbería La Navaja — Estilo clásico y moderno">
+<meta name="twitter:description" content="Barbería masculina en Montevideo con atención clásica y moderna. Reservá por WhatsApp.">
+<meta name="twitter:image" content="https://www.barberialanavaja.uy/img/barberia-lanavaja-cover.jpg">
+
+<!-- 📞 CONTACTO E IDENTIDAD -->
+<link rel="canonical" href="https://www.barberialanavaja.uy/">
+<link rel="alternate" hreflang="es-uy" href="https://www.barberialanavaja.uy/">
+<meta name="business:contact_data:street_address" content="Av. 8 de Octubre 1234">
+<meta name="business:contact_data:locality" content="Montevideo">
+<meta name="business:contact_data:country_name" content="Uruguay">
+<meta name="business:contact_data:phone_number" content="+59899123456">
+<meta name="business:contact_data:website" content="https://www.barberialanavaja.uy/">
+
+  <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <style>
-    /* Paleta: madera oscura, cobre, blanco, crema */
-    :root{
+    :root {
       --wood: #2E2A26;
       --copper: #B8860B;
       --cream: #F4F1EE;
       --muted: #9e968f;
     }
-    body{font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background: var(--cream); color: var(--wood);}
-    .navbar{background: linear-gradient(180deg, rgba(46,42,38,0.98), rgba(46,42,38,0.9));}
-    .brand{font-weight:700;color:var(--cream);} 
-    .hero{background: url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=000') center/cover no-repeat;padding:6rem 0;color:#fff;position:relative}
-    .hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg, rgba(46,42,38,0.45), rgba(46,42,38,0.6));}
-    .hero .container{position:relative;z-index:2}
-    .chip{background:rgba(0,0,0,0.35);padding:.35rem .6rem;border-radius:999px;font-size:.9rem;color:#fff}
-    .accent{color:var(--copper)}
-    .card-service{border:0;background:linear-gradient(180deg,#fff, #fbf8f6);box-shadow:0 8px 20px rgba(46,42,38,0.08);}
-    .btn-copper{background:var(--copper);border-color:var(--copper);color:#fff}
-    .footer{background:var(--wood);color:var(--cream);padding:2rem 0}
-    .gallery-img{height:220px;object-fit:cover;width:100%;border-radius:.5rem}
-    /* responsive tweaks */
+    body {
+      font-family: 'Poppins', system-ui, sans-serif;
+      background: var(--cream);
+      color: var(--wood);
+    }
+    .navbar {background: linear-gradient(180deg, rgba(46,42,38,0.98), rgba(46,42,38,0.9));}
+    .brand {font-weight:700; color:var(--cream);}
+    .accent {color:var(--copper);}
+    .hero {
+      background: url('/close-up-man-getting-haircut-salon.jpg') center/cover no-repeat;
+      padding:6rem 0; color:#fff; position:relative;
+    }
+    .hero::after {content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(46,42,38,0.45),rgba(46,42,38,0.6));}
+    .hero .container {position:relative;z-index:2;}
+    .chip {background:rgba(0,0,0,0.35);padding:.35rem .6rem;border-radius:999px;font-size:.9rem;}
+    .card-service {border:0;background:linear-gradient(180deg,#fff,#fbf8f6);box-shadow:0 8px 20px rgba(46,42,38,0.08);}
+    .btn-copper {background:var(--copper);border-color:var(--copper);color:#fff;}
+    .gallery-img {height:220px;object-fit:cover;width:100%;border-radius:.5rem;cursor:pointer;}
+    .footer {background:var(--wood);color:var(--cream);}
+    .card:hover {transform:translateY(-4px);transition:.3s ease;box-shadow:0 10px 25px rgba(46,42,38,0.1);}
     @media(min-width:992px){.hero{padding:8rem 0}.gallery-img{height:300px}}
   </style>
 </head>
 <body>
+
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
   <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="#">
+    <a class="navbar-brand d-flex align-items-center" href="#inicio">
       <div class="me-2" style="width:44px;height:44px;background:var(--copper);border-radius:8px;display:grid;place-items:center;color:var(--wood);font-weight:700">LN</div>
       <span class="brand">Barbería <span class="accent">La Navaja</span></span>
     </a>
@@ -58,7 +102,7 @@
         <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
         <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
         <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-        <li class="nav-item ms-3"><a class="btn btn-copper" href="https://wa.me/59899123456" target="_blank" rel="noopener">Reservá por WhatsApp</a></li>
+        <li class="nav-item ms-3"><a class="btn btn-copper" href="https://wa.me/59899123456" target="_blank">Reservá por WhatsApp</a></li>
       </ul>
     </div>
   </div>
@@ -74,26 +118,26 @@
         <p class="lead mt-2" style="max-width:540px">Cortes clásicos y modernos, afeitados con navaja y asesoría personalizada. +20 años de oficio y un ambiente cálido para que salgas impecable.</p>
         <div class="mt-4">
           <a class="btn btn-light me-2" href="#servicios">Ver servicios</a>
-          <a class="btn btn-outline-light" href="https://goo.gl/maps/ejemploBarberia" target="_blank" rel="noopener">Cómo llegar</a>
+
         </div>
       </div>
       <div class="col-lg-5 d-none d-lg-block">
-        <img src="https://images.unsplash.com/photo-1526045612212-70caf35c14df?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=000" alt="Interior barbería" class="img-fluid rounded shadow">
+        <img src="/close-up-man-getting-groomed.jpg" alt="Interior barbería" class="img-fluid rounded shadow">
       </div>
     </div>
   </div>
 </header>
 
-<!-- Sobre -->
+<!-- Secciones -->
 <section id="sobre" class="py-5">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-6">
         <h2>Sobre <span class="accent">La Navaja</span></h2>
-        <p class="text-muted">Somos una barbería en el corazón de Montevideo (Calle Rivera 1234). Valoramos la tradición del oficio con técnicas modernas y productos de calidad. Nuestro objetivo: un servicio rápido, atento y duradero.</p>
+        <p class="text-muted">Somos una barbería en el corazón de Montevideo (Calle Rivera 1234). Valoramos la tradición del oficio con técnicas modernas y productos de calidad.</p>
         <ul class="mb-3">
           <li>Atención por turno y walk-ins</li>
-          <li>Productos profesionales y cuidado de la piel</li>
+          <li>Productos profesionales</li>
           <li>Ambiente cálido y música cuidada</li>
         </ul>
         <a class="btn btn-outline-secondary" href="#contacto">Contactanos</a>
@@ -113,154 +157,81 @@
   </div>
 </section>
 
-<!-- Servicios / Precios -->
 <section id="servicios" class="py-5 bg-white">
   <div class="container">
     <div class="d-flex justify-content-between align-items-center mb-4">
       <h2>Servicios & Precios</h2>
-      <a class="text-muted" href="#contacto">Promo: combo Corte + Barba $1200</a>
+      <a class="text-muted small" href="#contacto">Promo: Corte + Barba $1200</a>
     </div>
     <div class="row g-3">
-      <!-- Servicio card -->
-      <div class="col-md-4">
-        <div class="card p-3 h-100">
-          <h5 class="mb-1">Corte Clásico</h5>
-          <p class="text-muted small">Corte con tijera + terminado a máquina.</p>
-          <div class="mt-auto d-flex justify-content-between align-items-center">
-            <strong>$700</strong>
-            <a class="btn btn-sm btn-outline-primary" href="https://wa.me/59899123456" target="_blank">Reservar</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card p-3 h-100">
-          <h5 class="mb-1">Afeitado con Navaja</h5>
-          <p class="text-muted small">Toalla caliente, espuma y afeitado profesional.</p>
-          <div class="mt-auto d-flex justify-content-between align-items-center">
-            <strong>$500</strong>
-            <a class="btn btn-sm btn-outline-primary" href="https://wa.me/59899123456" target="_blank">Reservar</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card p-3 h-100">
-          <h5 class="mb-1">Arreglo de Barba</h5>
-          <p class="text-muted small">Perfilado, aceites y acabado con peine.</p>
-          <div class="mt-auto d-flex justify-content-between align-items-center">
-            <strong>$400</strong>
-            <a class="btn btn-sm btn-outline-primary" href="https://wa.me/59899123456" target="_blank">Reservar</a>
-          </div>
-        </div>
-      </div>
-
+      <div class="col-md-4"><div class="card p-3 h-100"><h5>Corte Clásico</h5><p class="text-muted small">Corte con tijera + máquina.</p><div class="mt-auto d-flex justify-content-between align-items-center"><strong>$700</strong><a class="btn btn-sm btn-outline-primary" href="https://wa.me/59899123456" target="_blank">Reservar</a></div></div></div>
+      <div class="col-md-4"><div class="card p-3 h-100"><h5>Afeitado con Navaja</h5><p class="text-muted small">Toalla caliente, espuma y afeitado profesional.</p><div class="mt-auto d-flex justify-content-between align-items-center"><strong>$500</strong><a class="btn btn-sm btn-outline-primary" href="https://wa.me/59899123456" target="_blank">Reservar</a></div></div></div>
+      <div class="col-md-4"><div class="card p-3 h-100"><h5>Arreglo de Barba</h5><p class="text-muted small">Perfilado, aceites y acabado con peine.</p><div class="mt-auto d-flex justify-content-between align-items-center"><strong>$400</strong><a class="btn btn-sm btn-outline-primary" href="https://wa.me/59899123456" target="_blank">Reservar</a></div></div></div>
     </div>
   </div>
 </section>
 
-<!-- Galería -->
 <section id="galeria" class="py-5">
   <div class="container">
-    <div class="d-flex justify-content-between align-items-center mb-4">
-      <h2>Galería</h2>
-      <p class="text-muted small mb-0">Antes / Después — Interiores — Detalles</p>
-    </div>
-    <div class="row g-3">
-      <!-- placeholder images from Unsplash -->
-      <div class="col-6 col-md-3">
-        <img src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=000" class="gallery-img" alt="Corte 1" data-bs-toggle="modal" data-bs-target="#lightbox" data-bs-img>
-      </div>
-      <div class="col-6 col-md-3">
-        <img src="https://images.unsplash.com/photo-1520975698514-0f5c9e2ffd0a?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=000" class="gallery-img" alt="Corte 2" data-bs-toggle="modal" data-bs-target="#lightbox" data-bs-img>
-      </div>
-      <div class="col-6 col-md-3">
-        <img src="https://images.unsplash.com/photo-1594824476961-7e6e10c0f6a9?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=000" class="gallery-img" alt="Interior" data-bs-toggle="modal" data-bs-target="#lightbox" data-bs-img>
-      </div>
-      <div class="col-6 col-md-3">
-        <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=000" class="gallery-img" alt="Detalle" data-bs-toggle="modal" data-bs-target="#lightbox" data-bs-img>
-      </div>
+    <h2>Galería</h2>
+    <div class="row g-3 mt-2">
+      <div class="col-6 col-md-3"><img src="close-up-barber-grooming-man.jpg" class="gallery-img" alt="Corte 1" data-bs-toggle="modal" data-bs-target="#lightbox"></div>
+      <div class="col-6 col-md-3"><img src="/close-up-man-getting-groomed.jpg" class="gallery-img" alt="Corte 2" data-bs-toggle="modal" data-bs-target="#lightbox"></div>
+      <div class="col-6 col-md-3"><img src="/close-up-man-getting-haircut-salon.jpg" class="gallery-img" alt="Interior" data-bs-toggle="modal" data-bs-target="#lightbox"></div>
+      <div class="col-6 col-md-3"><img src="/man-barbershop-salon-doing-haircut-beard-trim.jpg" class="gallery-img" alt="Detalle" data-bs-toggle="modal" data-bs-target="#lightbox"></div>
     </div>
   </div>
 </section>
 
-<!-- Lightbox modal for gallery -->
+<!-- Modal lightbox -->
 <div class="modal fade" id="lightbox" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-xl modal-dialog-centered">
     <div class="modal-content bg-transparent border-0">
       <div class="modal-body p-0">
-        <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"></button>
         <img src="" alt="" id="lightbox-img" class="w-100 rounded">
       </div>
     </div>
   </div>
 </div>
 
-<!-- Testimonios (opcional) -->
-<section class="py-5 bg-white">
-  <div class="container">
-    <h2>Testimonios</h2>
-    <div class="row g-3 mt-3">
-      <div class="col-md-4">
-        <div class="card p-3">
-          <p class="mb-1">"Excelente atención, el mejor corte que tuve en años."</p>
-          <small class="text-muted">— Martín</small>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card p-3">
-          <p class="mb-1">"El afeitado con navaja es un lujo. Muy profesional."</p>
-          <small class="text-muted">— Jorge</small>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- Contacto -->
-<section id="contacto" class="py-5">
+<section id="contacto" class="py-5 bg-light">
   <div class="container">
-    <div class="row">
+    <div class="row align-items-start g-4">
       <div class="col-lg-6">
-        <h2>Contacto</h2>
-        <p class="text-muted">Calle Rivera 1234, Centro, Montevideo • WhatsApp: <a href="https://wa.me/59899123456" target="_blank">+598 99 123 456</a></p>
-        <ul class="list-unstyled">
+        <h2 class="mb-3">Contacto</h2>
+        <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>Calle Rivera 1234, Centro, Montevideo<br>
+        <i class="fab fa-whatsapp me-2 text-success"></i>
+        <a href="https://wa.me/59899123456" target="_blank" class="text-success fw-semibold text-decoration-none">+598 99 123 456</a></p>
+        <ul class="list-unstyled mb-4">
           <li><strong>Horario:</strong> Lun - Vie 09:00 - 19:00 • Sáb 09:00 - 14:00</li>
-          <li><strong>Redes:</strong> <a href="https://www.instagram.com/barberialanavaja" target="_blank">Instagram</a> • <a href="https://www.facebook.com/barberialanavaja" target="_blank">Facebook</a></li>
+          <li class="mt-2"><strong>Redes:</strong>
+            <a href="https://www.instagram.com/barberialanavaja" target="_blank" class="text-dark text-decoration-none me-3"><i class="fab fa-instagram text-danger"></i> Instagram</a>
+            <a href="https://www.facebook.com/barberialanavaja" target="_blank" class="text-dark text-decoration-none"><i class="fab fa-facebook-f text-primary"></i> Facebook</a>
+          </li>
         </ul>
+        <div class="ratio ratio-16x9 rounded shadow-sm">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!4v1730927400000!6m8!1m7!1s2jAq5VaO_EGM7BfOFLF2Sw!2m2!1d-34.7065444!2d-56.2163191!3f206.5!4f0!5f0.7820865974627469"
+    width="600"
+    height="450"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
 
-        <!-- Small map link -->
-        <p><a class="btn btn-outline-secondary" href="https://goo.gl/maps/ejemploBarberia" target="_blank">Ver en Google Maps</a></p>
-
-        <!-- Quick contact buttons -->
-        <div class="d-flex gap-2">
-          <a class="btn btn-copper" href="https://wa.me/59899123456" target="_blank">WhatsApp</a>
-          <a class="btn btn-outline-secondary" href="mailto:contacto@barberialanavaja.uy">Email</a>
-        </div>
       </div>
-
-      <div class="col-lg-6 mt-4 mt-lg-0">
-        <div class="card p-3">
-          <h5>Enviar consulta / reservar</h5>
-          <!-- Simple contact form: uses JS to open mail client with form content (no backend required) -->
+      <div class="col-lg-6">
+        <div class="card shadow-sm border-0 p-4">
+          <h5 class="mb-3"><i class="fas fa-envelope-open-text me-2 text-secondary"></i> Enviar consulta / reservar</h5>
           <form id="contactForm">
-            <div class="mb-2">
-              <label class="form-label">Nombre</label>
-              <input class="form-control" id="name" required>
-            </div>
-            <div class="mb-2">
-              <label class="form-label">Teléfono / WhatsApp</label>
-              <input class="form-control" id="phone">
-            </div>
-            <div class="mb-2">
-              <label class="form-label">Mensaje</label>
-              <textarea class="form-control" id="message" rows="4" required></textarea>
-            </div>
-            <div class="d-flex gap-2">
-              <button class="btn btn-copper" type="submit">Enviar consulta</button>
-              <button class="btn btn-outline-secondary" type="button" id="btnWa">Reservar por WhatsApp</button>
-            </div>
-            <p class="small text-muted mt-2 mb-0">También podés reservar directamente por WhatsApp: <a href="https://wa.me/59899123456" target="_blank">+598 99 123 456</a></p>
+            <div class="mb-3"><label class="form-label">Nombre</label><input type="text" id="name" class="form-control" placeholder="Tu nombre" required></div>
+            <div class="mb-3"><label class="form-label">Teléfono / WhatsApp</label><input type="tel" id="phone" class="form-control" placeholder="+598 ..." inputmode="tel"></div>
+            <div class="mb-3"><label class="form-label">Mensaje</label><textarea id="message" rows="4" class="form-control" placeholder="Escribí tu mensaje..." required></textarea></div>
+            <button class="btn btn-success w-100" type="submit"><i class="fab fa-whatsapp me-2"></i> Reservar por WhatsApp</button>
           </form>
         </div>
       </div>
@@ -269,15 +240,12 @@
 </section>
 
 <!-- Footer -->
-<footer class="footer mt-5">
-  <div class="container d-flex justify-content-between align-items-center">
-    <div>
-      <strong>Barbería La Navaja</strong><br>
-      <small class="text-muted">Calle Rivera 1234, Centro • Montevideo</small>
-    </div>
-    <div class="text-end">
-      <small class="d-block">© <span id="year"></span> Barbería La Navaja</small>
-      <small class="d-block">👉 Desarrollado por Noble Code Web</small>
+<footer class="footer py-3 mt-5 border-top bg-white">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center text-muted">
+    <div><strong class="text-dark">Barbería La Navaja</strong><br><small>Calle Rivera 1234, Centro • Montevideo</small></div>
+    <div class="text-md-end">
+      <small>© <span id="year"></span> Barbería La Navaja</small><br>
+      <small>💈 Desarrollado por <a href="https://www.instagram.com/noblecodeweb" target="_blank" class="text-dark fw-semibold text-decoration-none">Noble Code Web</a></small>
     </div>
   </div>
 </footer>
@@ -285,56 +253,84 @@
 <!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-  // Accessibility: focus trap for modal image handled by Bootstrap
-  // Update copyright year
+  // Año automático
   document.getElementById('year').textContent = new Date().getFullYear();
 
-  // Lightbox behavior: set image src when opening
-  document.querySelectorAll('[data-bs-img]').forEach(img=>{
-    img.addEventListener('click', e=>{
+  // Lightbox
+  document.querySelectorAll('.gallery-img').forEach(img => {
+    img.addEventListener('click', e => {
       const src = e.target.getAttribute('src');
-      const alt = e.target.getAttribute('alt') || '';
+      const alt = e.target.getAttribute('alt');
       document.getElementById('lightbox-img').setAttribute('src', src);
       document.getElementById('lightbox-img').setAttribute('alt', alt);
-    })
+    });
   });
 
-  // Contact form: open mail client with prefilled content (no backend required)
-  document.getElementById('contactForm').addEventListener('submit', function(e){
+  // Formulario: enviar por WhatsApp y mail
+  document.getElementById('contactForm').addEventListener('submit', e => {
     e.preventDefault();
-    const name = encodeURIComponent(document.getElementById('name').value || '');
-    const phone = encodeURIComponent(document.getElementById('phone').value || '');
-    const message = encodeURIComponent(document.getElementById('message').value || '');
+    const name = document.getElementById('name').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    if (!name || !message) {
+      alert('Por favor completá tu nombre y mensaje.');
+      return;
+    }
+
+    const text = `Hola! 👋 Soy ${name}.%0A📞 Teléfono: ${phone || "No especificado"}%0A📝 Mensaje: ${message}`;
+    window.open(`https://wa.me/59899123456?text=${text}`, '_blank');
+
+    // Abrir cliente de correo como alternativa
     const subject = encodeURIComponent('Consulta desde sitio - Barbería La Navaja');
-    const body = encodeURIComponent(`Nombre: ${decodeURIComponent(name)}%0D%0ATeléfono: ${decodeURIComponent(phone)}%0D%0A%0D%0AMensaje:%0D%0A${decodeURIComponent(message)}`);
-    // Use mailto to open user's email client
+    const body = encodeURIComponent(`Nombre: ${name}\nTeléfono: ${phone}\n\nMensaje:\n${message}`);
     window.location.href = `mailto:contacto@barberialanavaja.uy?subject=${subject}&body=${body}`;
   });
 
-  // Quick WhatsApp reservation button (prefill message)
-  document.getElementById('btnWa').addEventListener('click', function(){
-    const name = encodeURIComponent(document.getElementById('name').value || '');
-    const phone = encodeURIComponent(document.getElementById('phone').value || '');
-    const message = encodeURIComponent(document.getElementById('message').value || '');
-    const text = `Hola! Quiero reservar. Nombre: ${decodeURIComponent(name)} - Tel: ${decodeURIComponent(phone)} - Mensaje: ${decodeURIComponent(message)}`;
-    window.open(`https://wa.me/59899123456?text=${encodeURIComponent(text)}`, '_blank');
+  // Navbar sombra al hacer scroll
+  window.addEventListener('scroll', ()=> {
+    document.querySelector('.navbar').classList.toggle('shadow-sm', window.scrollY > 50);
   });
 
-  // Smooth scroll for anchors
+  // Scroll suave
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+    anchor.addEventListener('click', e => {
       e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
+      const target = document.querySelector(anchor.getAttribute('href'));
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   });
 </script>
 
-<!-- Comments:
-  - Archivo listo para subir a hosting o Netlify.
-  - Reemplazar imágenes de ejemplo por las fotos propias (carpeta /img o URLs).
-  - Para enviar formularios a un backend, cambiar el comportamiento del form y añadir un endpoint (ej. Formspree, Netlify Forms o API propia).
-  - Accesibilidad: se añadieron etiquetas alt en imágenes, foco visible por defecto y botones con texto claro.
--->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Barbershop",
+  "name": "Barbería La Navaja",
+  "image": "https://www.barberialanavaja.uy/img/barberia-lanavaja-cover.jpg",
+  "@id": "https://www.barberialanavaja.uy/",
+  "url": "https://www.barberialanavaja.uy/",
+  "telephone": "+59899123456",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. 8 de Octubre 1234",
+    "addressLocality": "Montevideo",
+    "addressCountry": "UY"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -34.7065444,
+    "longitude": -56.2163191
+  },
+  "openingHours": "Mo-Sa 09:00-20:00",
+  "priceRange": "$$",
+  "description": "Barbería clásica con un toque moderno en Montevideo. Cortes, afeitados y grooming masculino.",
+  "sameAs": [
+    "https://www.instagram.com/barberialanavaja/",
+    "https://www.facebook.com/barberialanavaja"
+  ]
+}
+</script>
+
 </body>
 </html>
